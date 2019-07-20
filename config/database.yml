@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: localhost
+
+development:
+  <<: *default
+  database: bombster_development
+
+test:
+  <<: *default
+  database: bombster_test
+
+production:
+  <<: *default
+  database: bombster_production
+  # username: bombster
+  # password: <%= ENV['BOMBSTER_DATABASE_PASSWORD'] %>
+  
