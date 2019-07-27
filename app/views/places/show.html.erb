@@ -55,7 +55,6 @@
     <% end %>
   </div>
 
-
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -88,8 +87,6 @@
   </button>
 </div>
 
-<div class="clear"></div>
-
 <div class="row">
   <% @place.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
@@ -101,5 +98,5 @@
         <small><%= comment.user.email %></small>
       </blockquote>
     </div>
-   <% end %>
-  </div>  
+  <% end %>
+</div>
