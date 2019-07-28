@@ -102,3 +102,11 @@
       </div>
      <% end %>
     </div> 
+  
+  <div class="row"
+    <% @place.photos.each do |photo| %> do |f| %>
+     <%= f.input :message %>
+     <%= f.input :rating %>
+     <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+<% end %>
+  
