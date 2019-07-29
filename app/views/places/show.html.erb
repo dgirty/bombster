@@ -103,8 +103,8 @@
      <% end %>
     </div> 
   
-
-  <%= simple_form_for @comment, url: place_photos_path(@place) do |f| %>
+<div class="row">
+ <% @place.photos.each do |photo| %>
   <%= f.input :message %>
   <%= f.input :rating %>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
